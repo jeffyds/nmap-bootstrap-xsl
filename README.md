@@ -11,6 +11,10 @@ A Nmap XSL implementation with Bootstrap.
 nmap -sS -T4 -A -sC -oA scanme --stylesheet https://raw.githubusercontent.com/honze-net/nmap-bootstrap-xsl/master/nmap-bootstrap.xsl scanme.nmap.org scanme2.nmap.org
 ```
 
+```sh
+sudo nmap -sS -T4 -A -sC  -p- -Pn --min-rate 10000 -oA scanme  --stylesheet https://raw.githubusercontent.com/honze-net/nmap-bootstrap-xsl/master/nmap-bootstrap.xsl  -iL ../ip.list
+
+```
 - Open the scanme.xml with your Web browser. It should look like the [`scanme.html sample report`](http://htmlpreview.github.io/?https://github.com/honze-net/nmap-bootstrap-xsl/blob/master/scanme.html).
 - Alternatively you can transform the xml to html with
 
